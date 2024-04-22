@@ -4,7 +4,7 @@
 #define MIRYOKU_TAP_QWERTY
 #define MIRYOKU_CLIPBOARD_WIN
 
-#define MIRYOKU_ALTERNATIVES_TAP_GAMING                                        \
+#define MIRYOKU_ALTERNATIVES_TAP_GAME                                          \
   &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O,    \
       &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K,       \
       &kp Lt, &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M,       \
