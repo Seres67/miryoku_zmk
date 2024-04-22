@@ -1,17 +1,16 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define MIRYOKU_TAP_QWERTY
 #define MIRYOKU_CLIPBOARD_WIN
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 #define XXX &none
 
 #define MIRYOKU_LAYER_GAME                                                     \
-  &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O,    \
-      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K,       \
-      &kp Lt, &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M,       \
-      &kp COMMA, &kp DOT, U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET,    \
-      &kp BSPC, &kp DEL, U_NP, U_NP
+  &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, U_NA, U_NA, U_NA, U_NA, U_NA,         \
+      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, U_NA, U_NA, U_NA, U_NA, &kp LALT, \
+      &kp Z, &kp X, &kp C, &kp V, U_NA, U_NA, U_NA, U_NA, U_NA, U_NP, U_NP,    \
+      &kp ESC, &kp SPACE, &kp TAB, &kp RET, &kp BSPC, &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYER_NAV                                                      \
   U_BOOT, &u_to_U_TAP, &u_to_U_EXTRA, &u_to_U_BASE, &u_to_U_GAME, U_RDO,       \
