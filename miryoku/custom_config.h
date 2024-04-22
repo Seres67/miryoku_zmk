@@ -7,8 +7,8 @@
 
 #define MIRYOKU_LAYER_GAME                                                     \
   &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &u_to_U_BASE, U_NA, U_NA, U_NA, U_NA, \
-      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, U_NA, U_NA, U_NA, U_NA, U_NA,     \
-      &kp LALT, &kp Z, &kp X, &kp C, &kp V, U_NA, U_NA, U_NA, U_NA, U_NA,      \
+      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, U_NA, U_NA, U_NA, &kp I, U_NA,    \
+      &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp M, U_NA, U_NA, U_NA, U_NA,     \
       U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET, &kp BSPC, &kp DEL,     \
       U_NP, U_NP
 
