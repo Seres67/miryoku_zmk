@@ -46,7 +46,7 @@
   MIRYOKU_X(NUM, "Num")                                                        \
   MIRYOKU_X(SYM, "Sym")                                                        \
   MIRYOKU_X(FUN, "Fun")                                                        \
-  MIRYOKU_X(GAME, "Game")
+  MIRYOKU_X(GAME, "Game")                                                      \
   MIRYOKU_X(POE, "POE")
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
