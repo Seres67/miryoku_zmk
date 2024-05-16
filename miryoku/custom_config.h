@@ -6,16 +6,23 @@
 #define XXX &none
 
 #define MIRYOKU_LAYER_GAME                                                     \
-  &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &u_to_U_BASE, U_NA, U_NA, U_NA, U_NA, \
-      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, U_NA, U_NA, U_NA, &kp I, U_NA,    \
-      &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp M, &kp B, U_NA, U_NA, U_NA,    \
-      U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET, &kp BSPC, &kp DEL,     \
-      U_NP, U_NP
+  &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O, \
+    &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L,    \
+    &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &u_to_U_BASE,    \
+    U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET, U_LT(U_NUM, BSPC), &kp DEL,     \
+    U_NP, U_NP
+
+#define MIRYOKU_LAYER_POE                                                     \
+  &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O, &kp P, \
+    &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L, &kp SQT,    \
+    &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &kp DOT, &u_to_U_BASE,    \
+    U_NP, U_NP, U_MT(LCTRL, ESC), U_MT(LSHIFT, SPACE), U_MT(LALT, TAB), &kp RET, U_LT(U_NUM, BSPC), &kp DEL,     \
+    U_NP, U_NP
 
 #define MIRYOKU_LAYER_NAV                                                      \
   U_BOOT, &u_to_U_TAP, &u_to_U_EXTRA, &u_to_U_BASE, &u_to_U_GAME, U_RDO,       \
       U_PST, U_CPY, U_CUT, U_UND, &kp LGUI, &kp LALT, &kp LCTRL, &kp LSHFT,    \
-      U_NA, &u_caps_word, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, U_NA,         \
+      &u_to_U_POE, &u_caps_word, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, U_NA,         \
       &kp RALT, &u_to_U_NUM, &u_to_U_NAV, U_NA, &kp INS, &kp HOME, &kp PG_DN,  \
       &kp PG_UP, &kp END, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET, &kp BSPC,     \
       &kp DEL, U_NP, U_NP
@@ -40,8 +47,11 @@
   MIRYOKU_X(SYM, "Sym")                                                        \
   MIRYOKU_X(FUN, "Fun")                                                        \
   MIRYOKU_X(GAME, "Game")
+  MIRYOKU_X(POE, "POE")
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_POE MIRYOKU_MAPPING
+
 
 #define U_BASE 0
 #define U_EXTRA 1
@@ -54,3 +64,4 @@
 #define U_SYM 8
 #define U_FUN 9
 #define U_GAME 10
+#define U_POE 11
