@@ -3,6 +3,7 @@
 
 name: 'Build corne nice_nano_v2 nice_view'
 on:
+  workflow_dispatch:
   push:
 jobs:
   build:
