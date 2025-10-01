@@ -62,8 +62,8 @@
   MIRYOKU_X(FUN, "Fun")                                                        \
   MIRYOKU_X(GAME, "Game")                                                      \
   MIRYOKU_X(LOL, "LoL")                                                        \
-  MIRYOKU_X(GW2, "GW2")
-MIRYOKU_X(GW2W, "GW2W")
+  MIRYOKU_X(GW2, "GW2")                                                        \
+  MIRYOKU_X(GW2W, "GW2W")
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_LOL MIRYOKU_MAPPING
