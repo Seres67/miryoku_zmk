@@ -54,7 +54,7 @@
   &kp GRAVE, &kp Q, &kp W, &kp E, &kp R, &kp Y, &kp U, &kp I, &kp O, &kp P,    \
       &kp T, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L,    \
       &kp LSHIFT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA,  \
-      &u_to_U_BASE, U_NP, U_NP, U_LT(U_GW2_WEAPONS, ESC), &kp SPACE, &kp TAB,  \
+      &u_to_U_BASE, U_NP, U_NP, U_LT(U_GW2W, ESC), &kp SPACE, &kp TAB,         \
       &kp RET, &kp BSPC, &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYER_GW2W                                                     \
