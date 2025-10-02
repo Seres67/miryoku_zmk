@@ -65,12 +65,12 @@
       &kp BSPC, &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYER_NAV                                                      \
-  U_BOOT, &u_to_U_TAP, &u_to_U_EXTRA, &u_to_U_BASE, &u_to_U_GAME, U_RDO,       \
-      U_PST, U_CPY, U_CUT, U_UND, &kp LGUI, &kp LALT, &kp LCTRL, &kp LSHFT,    \
-      &u_to_U_LOL, &u_caps_word, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, U_NA,  \
-      &kp RALT, &u_to_U_NUM, &u_to_U_NAV, &u_to_U_GW2, &kp INS, &kp HOME,      \
-      &kp PG_DN, &kp PG_UP, &kp END, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET,    \
-      &kp BSPC, &kp DEL, U_NP, U_NP
+  U_BOOT, &u_to_U_TAP, &u_to_U_EXTRA, &u_to_U_BASE, &u_to_U_FPS, U_RDO, U_PST, \
+      U_CPY, U_CUT, U_UND, &kp LGUI, &kp LALT, &kp LCTRL, &kp LSHFT, U_NP,     \
+      &u_caps_word, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, U_NA, &kp RALT,     \
+      &u_to_U_NUM, &u_to_U_NAV, &u_to_U_GW2, &kp INS, &kp HOME, &kp PG_DN,     \
+      &kp PG_UP, &kp END, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET, &kp BSPC,     \
+      &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE(                                           \
     K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11, K12, K13, K14, \
