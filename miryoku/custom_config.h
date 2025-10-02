@@ -16,10 +16,10 @@
   MIRYOKU_X(NUM, "Num")                                                        \
   MIRYOKU_X(SYM, "Sym")                                                        \
   MIRYOKU_X(FUN, "Fun")                                                        \
-  MIRYOKU_X(GAME, "Game")                                                      \
-  MIRYOKU_X(LOL, "LoL")                                                        \
   MIRYOKU_X(GW2, "GW2")                                                        \
-  MIRYOKU_X(GW2W, "GW2W")
+  MIRYOKU_X(GW2W, "GW2W")                                                      \
+  MIRYOKU_X(FPS, "FPS")                                                        \
+  MIRYOKU_X(FPSW, "FPSW")
 
 #define U_BASE 0
 #define U_EXTRA 1
@@ -31,24 +31,10 @@
 #define U_NUM 7
 #define U_SYM 8
 #define U_FUN 9
-#define U_GAME 10
-#define U_LOL 11
-#define U_GW2 12
-#define U_GW2W 13
-
-#define MIRYOKU_LAYER_GAME                                                     \
-  &kp LCTRL, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O,    \
-      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K,       \
-      &kp L, &kp LALT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M,        \
-      &kp COMMA, &u_to_U_BASE, U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB,        \
-      &kp RET, U_LT(U_NUM, BSPC), &kp DEL, U_NP, U_NP
-
-#define MIRYOKU_LAYER_LOL                                                      \
-  &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O, &kp P, &kp A, \
-      &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L, &kp SQT, &kp Z,  \
-      &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &kp DOT,            \
-      &u_to_U_BASE, U_NP, U_NP, U_MT(LCTRL, ESC), U_MT(LALT, SPACE),           \
-      U_MT(LSHIFT, TAB), &kp RET, U_LT(U_NUM, BSPC), &kp DEL, U_NP, U_NP
+#define U_GW2 10
+#define U_GW2W 11
+#define U_FPS 12
+#define U_FPSW 13
 
 #define MIRYOKU_LAYER_GW2                                                      \
   &kp GRAVE, &kp Q, &kp W, &kp E, &kp R, &kp Y, &kp U, &kp I, &kp O, &kp P,    \
@@ -61,7 +47,21 @@
   &kp N1, &kp N2, &kp W, &kp N3, &kp N4, &kp Y, &kp U, &kp I, &kp O, &kp P,    \
       &kp T, &kp A, &kp S, &kp D, &kp N5, &kp G, &kp H, &kp J, &kp K, &kp L,   \
       &kp LSHIFT, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA,  \
-      &u_to_U_BASE, U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET,          \
+      &u_to_U_BASE, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET, &kp BSPC, &kp DEL,  \
+      U_NP, U_NP
+
+#define MIRYOKU_LAYER_FPS                                                      \
+  &kp B, &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O,        \
+      &kp LSHFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K,       \
+      &kp L, &kp LCTRL, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M,       \
+      &kp COMMA, &u_to_U_BASE, U_NP, U_NP, U_LT(U_FPSW, ESC), &kp SPACE,       \
+      &kp TAB, &kp RET, &kp BSPC, &kp DEL, U_NP, U_NP
+
+#define MIRYOKU_LAYER_FPSW                                                     \
+  &kp N1, &kp N2, &kp W, &kp N3, &kp N4, &kp Y, &kp U, &kp I, &kp O, &kp P,    \
+      &kp LSHIFT, &kp A, &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K,      \
+      &kp L, &kp LCTRL, &kp Z, &kp X, &kp C, &kp V, &kp B, &kp N, &kp M,       \
+      &kp COMMA, &u_to_U_BASE, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET,          \
       &kp BSPC, &kp DEL, U_NP, U_NP
 
 #define MIRYOKU_LAYER_NAV                                                      \
@@ -80,7 +80,7 @@
       K16 K17 K18 K19 XXX XXX K20 K21 K22 K23 K24 K25 K26 K27 K28 K29 XXX K32  \
           K33 K34 K35 K36 K37
 
-#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
-#define MIRYOKU_LAYERMAPPING_LOL MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_GW2 MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_GW2W MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_FPS MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_FPSW MIRYOKU_MAPPING
