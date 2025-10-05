@@ -19,7 +19,8 @@
   MIRYOKU_X(GW2, "GW2")                                                        \
   MIRYOKU_X(GW2W, "GW2W")                                                      \
   MIRYOKU_X(FPS, "FPS")                                                        \
-  MIRYOKU_X(FPSW, "FPSW")
+  MIRYOKU_X(FPSW, "FPSW")                                                      \
+  MIRYOKU_X(GAME, "GAME")
 
 #define U_BASE 0
 #define U_EXTRA 1
@@ -35,6 +36,7 @@
 #define U_GW2W 11
 #define U_FPS 12
 #define U_FPSW 13
+#define U_GAME 14
 
 #define MIRYOKU_LAYER_GW2                                                      \
   &kp GRAVE, &kp Q, &kp W, &kp E, &kp R, &kp Y, &kp U, &kp I, &kp O, &kp P,    \
@@ -64,6 +66,13 @@
       &kp COMMA, &u_to_U_BASE, U_NP, U_NP, U_NA, U_NA, U_NA, &kp RET,          \
       &kp BSPC, &kp DEL, U_NP, U_NP
 
+#define MIRYOKU_LAYER_GAME                                                     \
+  &kp Q, &kp W, &kp E, &kp R, &kp T, &kp Y, &kp U, &kp I, &kp O, &kp P, &kp A, \
+      &kp S, &kp D, &kp F, &kp G, &kp H, &kp J, &kp K, &kp L, &kp SEMI, &kp Z, \
+      &kp X, &kp C, &kp V, &kp B, &kp N, &kp M, &kp COMMA, &kp DOT,            \
+      &u_to_U_BASE, U_NP, U_NP, &kp ESC, &kp SPACE, &kp TAB, &kp RET,          \
+      &kp BSPC, &kp DEL, U_NP, U_NP
+
 #define MIRYOKU_LAYER_NAV                                                      \
   U_BOOT, &u_to_U_TAP, &u_to_U_EXTRA, &u_to_U_BASE, &u_to_U_FPS, U_RDO, U_PST, \
       U_CPY, U_CUT, U_UND, &kp LGUI, &kp LALT, &kp LCTRL, &kp LSHFT, U_NP,     \
@@ -84,3 +93,4 @@
 #define MIRYOKU_LAYERMAPPING_GW2W MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_FPS MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_FPSW MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
