@@ -11,4 +11,5 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano"]'
-      shield: '["nice_view_adapter nice_view corne_left ","nice_view_adapter nice_view corne_right "]'
+      shield: '["nice_view_adapter nice_view corne_left","nice_view_adapter nice_view corne_right"]'
+      branches: '["zmkfirmware/zmk/v0.3-branch"]'
