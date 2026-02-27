@@ -12,5 +12,5 @@ jobs:
     with:
       board: '["nice_nano"]'
       shield: '["corne_left nice_view_adapter nice_view","corne_right nice_view_adapter nice_view"]'
-      kconfig: '["CONFIG_BT_DEVICE_NAME_MAX=29"]'
+      kconfig: '["CONFIG_BT_DEVICE_NAME_MAX=29\nCONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y\nCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
       branches: '["zmkfirmware/zmk/v0.3-branch"]'
